@@ -13,6 +13,7 @@ def print_field():
     print(field[3], field[4], field[5], end='\n')
     print(field[6], field[7], field[8])
 
+
 # передача символа в клетку
 def step_field(step, symbol):
     ind = field.index(step)
