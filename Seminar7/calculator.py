@@ -1,13 +1,24 @@
+import logger as log
+
+
 def calculator(a, b):
     point = input('\tВведите знак: ')
     if point == '+':
-        print('Addition =', a + b)
+        result = a + b
+        print(result)
+        log.logger(f'{a}+{b}={result}')
     elif point == '-':
-        print('Subtraction =', a - b)
+        result = a - b
+        print(result)
+        log.logger(f'{a}-{b}={result}')
     elif point == '*':
-        print('Multiplication =', a * b)
+        result = a * b
+        print(result)
+        log.logger(f'{a}*{b}={result}')
     elif point == '/':
         if b == 0:
             print("Деление на 0 не допускается")
         else:
-            print('Division =', a / b)
+            result = a / b
+            print(result)
+            log.logger(f'{a}/{b}={result}')
